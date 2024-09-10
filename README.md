@@ -56,5 +56,6 @@ with the following functions:
            Gen_OC(): generate out-control samples from Model II, and impose the out-control pattern of Setting I 
 
 9. Lcontrol.RData: contained the control limits ‘h’ for model I which is a 7 by 4 matrix trained using “Guess_L.R” file to guarantee an ARL_0 = 200. The 7 column in  matrix correspond the mfpca Δ = 0.01,0.05,0.1 and fpca Δ = 0.01,0.05,0.1, and last column is fpca with random sampling method. Among the 4 rows, the first 3 rows correspond to observation availabilities of r = 10,7,4, while the last row contain the in-control limit for the MFPCA fully observed method under model I.  The training procedure involves a binary search to approximate an enough accurate control limits ‘h’. Obtaining a sufficient accurate control limits can take up to 3 days in our experiment. For the purpose of demonstration, we provide these limits in matrix format here. One can exam these limits by setting the mean shift magnitude to be 0 and retrieving ARL_0 results.
-	
+
+ The case study training data is available at: https://drive.google.com/file/d/16Gsmf5y-MwtM2OqRKOXA3YF4v26HfF2k/view?usp=sharing
 
